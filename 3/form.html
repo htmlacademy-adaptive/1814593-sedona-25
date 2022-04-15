@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML Academy: Седона</title>
+  <base href="https://htmlacademy-adaptive.github.io/1814593-sedona-25/3/">
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__link" href="#">
+      <img class="page-header__logo" src="img/logotype-mobile.png" width="185" height="96" alt="Седона">
+    </a>
+    <nav class="navigation">
+      <div class="navigation__wrapper">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link">Фото и видео</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link">Форма отзыва</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link">html academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <div class="page-main__wrapper">
+      <div class="page-main__slogan slogan">
+        <h1 class="visually-hidden">SEDONA</h1>
+        <img class="slogan__image" src="img/catalog-background.png" alt="Фон заставка" width="282"
+          height="214">
+      </div>
+      <section class="page-main__feedback feedback">
+        <h2 class="feedback__title">Оставьте свой отзыв!</h2>
+        <p class="feedback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+          достопримечательностях</p>
+        <div class="feedback__full-name full-name">
+          <h2 class="full-name__title">Представьтесь:</h2>
+          <form class="full-name__form" action="#" method="post">
+            <h3 class="full-name__name">Имя*:</h3>
+            <input class="full-name__text" type="text" placeholder="Петр">
+          </form>
+          <form class="full-name__form" action="#" method="post">
+            <h3 class="full-name__surname">Фамилия*:</h3>
+            <input class="full-name__text" name="text" placeholder="Пустота">
+          </form>
+          <form class="full-name__form" action="#" method="post">
+            <h3 class="full-name__patronymic">Отчество*:</h3>
+            <input class="full-name__text" type="text" placeholder="Викторович">
+          </form>
+        </div>
+        <div class="feedback__contact-info contact-info">
+          <h2 class="contact-info__title">Контактная информация:</h2>
+          <p class="contact-info__subtitle">Контактный телефон*:</p>
+          <form class="contact-info__form" action="#" method="post">
+            <input class="contact-info__input" type="number" name="contact" id="contact" placeholder="Введите телефон">
+            <button class="contact-info__button" type="submit"></button>
+          </form>
+          <p class="contact-info__subtitle">Электронная почта*:</p>
+          <form class="contact-info__form" action="#" method="post">
+            <input class="contact-info__input" type="e-mail" name="e-mail" id="e-mail" placeholder="Введите e-mail">
+            <button class="contact-info__button" type="submit"></button>
+          </form>
+        </div>
+        <div class="feedback__review review">
+          <h2 class="review__title">Ваше общее впечатление:</h2>
+          <label class="review__label">
+            <input class="review__input review__input--active visually-hidden" type="radio" name="positive">
+            <span class="review__span">Скорее положительное</span>
+          </label>
+          <label class="review__label">
+            <input class="review__input visually-hidden" type="radio" name="negative">
+            <span class="review__span">Скорее отрицательное</span>
+          </label>
+          <label class="review__label">
+            <input class="review__input visually-hidden" type="radio" name="difficulty">
+            <span class="review__span">Затрудняюсь ответить</span>
+          </label>
+        </div>
+        <div class="feedback__visit visit">
+          <h2 class="visit__title">Посещенные достопримечательности:</h2>
+          <label class="visit__label">
+            <input class="visit__input visit__input--active visually-hidden" type="radio" name="positive">
+            <span class="visit__span">Мост Дьявола</span>
+          </label>
+          <label class="visit__label">
+            <input class="visit__input visit__input--active visually-hidden" type="radio" name="positive">
+            <span class="visit__span">Гора-Колокол</span>
+          </label>
+          <label class="visit__label">
+            <input class="visit__input visit__input--active visually-hidden" type="radio" name="positive">
+            <span class="visit__span">Слайд-парк</span>
+          </label>
+          <label class="visit__label">
+            <input class="visit__input visit__input visually-hidden" type="radio" name="positive">
+            <span class="visit__span">Красные скалы</span>
+          </label>
+        </div>
+        <div class="feedback__emotions emotions">
+          <h2 class="emotions__title">Опишите свои эмоции:</h2>
+          <form class="emotions__form" action="#" method="post">
+            <input class="emotions__text" type="text" placeholder="Опишите подробно все свои восторги">
+          </form>
+        </div>
+        <button class="feedback__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+        <p class="feedback__asterisk">* — обязательные поля</p>
+      </section>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__link" href="#">#visitsedon</a>
+    <ul class="page-footer__list social">
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Мы Вконтакте</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link visually-hidden" href="#">
+          <span class="visually-hidden">Мы в Telegram</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link visually-hidden" href="#">
+          <span class="visually-hidden">Мы в Youtube</span>
+        </a>
+      </li>
+    </ul>
+    <p class="page-footer__title">Разработано</p>
+    <a href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="35" height="27">
+        <path fill="#2E368F"
+          d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+      </svg>
+    </a>
+  </footer>
+</body>
+</html>
