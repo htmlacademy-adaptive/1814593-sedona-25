@@ -30,7 +30,7 @@
               <a class="navigation__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="https://htmlacademy.ru/">html academy</a>
+              <a class="navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -40,77 +40,76 @@
       <div class="page-main__wrapper">
         <div class="page-main__slogan slogan">
           <h1 class="visually-hidden">SEDONA</h1>
-          <img class="slogan__image" src="img/catalog-background.png" alt="Фон заставка" width="282" height="214">
         </div>
         <section class="page-main__feedback feedback">
           <h2 class="feedback__title">Оставьте свой отзыв!</h2>
           <p class="feedback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
             достопримечательностях</p>
           <form class="feedback__form" action="#" method="post">
-            <fieldset class="feedback__user-info user-info">
-              <legend class="user-info__title">Представьтесь:</legend>
-              <p class="user-info__text">
-                <label class="user-info__sub-title" for="name">Имя*:</label>
-                <input class="user-info__input" type="text" id="name" name="name" placeholder="Пётр">
-              </p>
-              <p class="user-info__text">
-                <label class="user-info__sub-title" for="surname">Фамилия*:</label>
-                <input class="user-info__input" type="text" id="surname" name="surname" placeholder="Пустота">
-              </p>
-              <p class="user-info__text">
-                <label class="user-info__sub-title" for="patronymic">Отчество:</label>
-                <input class="user-info__input" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
-              </p>
-            </fieldset>
-            <fieldset class="feedback__contacts contacts">
-              <legend class="contacts__title">Контактная информация:</legend>
-              <p class="contacts__text">
-                <label class="contacts__sub-title" for="phone">Контактный телефон*:</label>
-                <input class="contacts__input" type="number" name="phone" id="phone" placeholder="Введите телефон">
-              </p>
-              <p class="contacts__text">
-                <label lass="contacts__sub-title" for="email">Электронная почта*:</label>
-                <input class="contacts__input" type="email" name="email" id="email" placeholder="Введите e-mail">
-              </p>
-            </fieldset>
-            <fieldset class="feedback__impress impress">
-              <legend class="impress__title">Ваше общее впечатление:</legend>
-              <p class="impress__text">
-                <input class="impress__input" type="radio" name="positive" id="positive" checked>
-                <label class="impress__label" for="positive">Скорее положительное</label>
-              </p>
-              <p class="impress__text">
-                <input class="impress__input" type="radio" name="negative" id="negative">
-                <label lass="impress__label" for="negative">Скорее отрицательное</label>
-              </p>
-              <p class="impress__text">
-                <input class="impress__input" type="radio" name="difficulty" id="difficulty">
-                <label lass="impress__label" for="difficulty">Затрудняюсь ответить</label>
-              </p>
-            </fieldset>
-            <fieldset class="feedback__sights sights">
-              <legend class="sights__title">Посещенные достопримечательности:</legend>
+            <fieldset class="feedback__user-info">
+              <legend class="feedback__title">Представьтесь:</legend>
               <p>
-                <input class="sights__input" type="checkbox" name="bridge-devil" id="bridge-devil" checked>
-                <label for="sights__label">Мост Дьявола</label>
+                <label class="feedback__text" for="name">Имя*:</label>
+                <input class="feedback__input" type="text" id="name" name="name" placeholder="Пётр">
               </p>
               <p>
-                <input class="sights__input" type="checkbox" name="mount-bell" id="mount-bell" checked>
-                <label for="sights__label">Гора-Колокол</label>
+                <label class="feedback__text" for="surname">Фамилия*:</label>
+                <input class="feedback__input" type="text" id="surname" name="surname" placeholder="Пустота">
               </p>
               <p>
-                <input class="sights__input" type="checkbox" name="slide-park" id="slide-park" checked>
-                <label for="sights__label">Слайд-парк</label>
-              </p>
-              <p>
-                <input class="sights__input" type="checkbox" name="red-rocks" id="red-rocks">
-                <label for="sights__label">Красные скалы</label>
+                <label class="feedback__text" for="patronymic">Отчество:</label>
+                <input class="feedback__input" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
               </p>
             </fieldset>
-            <fieldset class="feedback__emotions emotions">
-              <legend class="emotions__title">Опишите свои эмоции:</legend>
-              <label for="emotions__label">
-                <input class="emotions__input" type="text" name="emotions" id="emotions"
+            <fieldset class="feedback__contacts">
+              <legend class="feedback__title">Контактная информация:</legend>
+              <p>
+                <label class="feedback__text" for="phone">Контактный телефон*:</label>
+                <input class="feedback__input" type="number" name="phone" id="phone" placeholder="Введите телефон">
+              </p>
+              <p>
+                <label class="feedback__text" for="email">Электронная почта*:</label>
+                <input class="feedback__input" type="email" name="email" id="email" placeholder="Введите e-mail">
+              </p>
+            </fieldset>
+            <fieldset class="feedback__impress">
+              <legend class="feedback__title">Ваше общее впечатление:</legend>  
+              <p>
+                <input class="feedback__radio" type="radio" name="positive" id="positive" checked>
+                <label class="feedback__option" for="positive">Скорее положительное</label>
+              </p>
+              <p>
+                <input class="feedback__radio" type="radio" name="negative" id="negative">
+                <label class="feedback__option" for="negative">Скорее отрицательное</label>
+              </p>
+              <p>
+                <input class="feedback__radio" type="radio" name="difficulty" id="difficulty">
+                <label class="feedback__option" for="difficulty">Затрудняюсь ответить</label>
+              </p>
+            </fieldset>
+            <fieldset class="feedback__sights">
+              <legend class="feedback__title">Посещенные достопримечательности:</legend>
+              <p>
+                <input class="feedback__checkbox" type="checkbox" name="bridge-devil" id="bridge-devil" checked>
+                <label class="feedback__option" for="bridge-devil">Мост Дьявола</label>
+              </p>
+              <p>
+                <input class="feedback__checkbox" type="checkbox" name="mount-bell" id="mount-bell" checked>
+                <label class="feedback__option" for="mount-bell">Гора-Колокол</label>
+              </p>
+              <p>
+                <input class="feedback__checkbox" type="checkbox" name="slide-park" id="slide-park" checked>
+                <label class="feedback__option" for="slide-park">Слайд-парк</label>
+              </p>
+              <p>
+                <input class="feedback__checkbox" type="checkbox" name="red-rocks" id="red-rocks">
+                <label class="feedback__option" for="red-rocks">Красные скалы</label>
+              </p>
+            </fieldset>
+            <fieldset class="feedback__emotions">
+              <legend class="feedback__title">Опишите свои эмоции:</legend>
+              <label for="emotions">
+                <input class="feedback__input" type="text" name="emotions" id="emotions"
                   placeholder="Опишите подробно все свои восторги">
               </label>
             </fieldset>
